@@ -1,0 +1,25 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.16.0",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.5",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.5",
+    "@nuxt/typescript-build": "^2.0.3"
+  }
+}

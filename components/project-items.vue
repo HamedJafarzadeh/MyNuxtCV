@@ -1,29 +1,25 @@
 <template>
   <div>
-    <b-row >
-      <b-col >
-        <h5 style="font-weight: bold">
-          {{ exp_title }}
-        </h5>
-        <h6>
-          {{exp_role}}
+    <b-row v-on:click="showDesc=!showDesc"  id="titleCol">
+      <b-col cols="10" >
+        <h6 style="font-weight: bold; display: inline" >
+          <fa icon="angle-right"/>
+          {{ proj_title }}
         </h6>
-        <h6>
-          {{exp_role1}}
-        </h6>
-        <h6>
-          {{exp_role2}}
-        </h6>
-        <h6>
-          <fa icon="building"/>
-          {{ exp_place }}
-        </h6>
-        <h6>
-          <fa icon="calendar"/>
-          {{exp_date}}
-        </h6>
+        | {{ proj_role }}
       </b-col>
+
+      <b-col cols="2">
+        <fa icon="calendar"/>
+        {{ proj_date }}
+      </b-col>
+      <hr/>
     </b-row>
+    <transition  name="fade">
+      <div v-if="showDesc" class="ProjContent">
+        <slot/>
+      </div>
+    </transition>
     <hr/>
   </div>
 
@@ -31,18 +27,40 @@
 
 <script>
 export default {
-  name: "experiences-item",
-  props:{
-    exp_title:String,
-    exp_role:String,
-    exp_role1:String,
-    exp_role2:String,
-    exp_place:String,
-    exp_date:String
+  name: "project-item",
+  props: {
+    proj_title: String,
+    proj_role: String,
+    proj_date: String
+  },
+  methods:{
+
+  },
+  data() {
+    return {
+      showDesc: false
+    }
   }
 }
 </script>
 
 <style scoped>
+
+.ProjContent{
+  padding: 0.5em 1em;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+#titleCol{
+  transition: color 0.1s;
+}
+#titleCol:hover{
+  color: #559953;
+  cursor: pointer;
+}
 
 </style>

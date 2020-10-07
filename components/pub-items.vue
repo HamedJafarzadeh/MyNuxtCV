@@ -4,14 +4,14 @@
       <b-col cols="10" >
         <h6 style="font-weight: bold">
           <fa icon="angle-right" />
-          <span v-bind:style="patent_title_style">{{ patent_title }}</span>
+          <span v-bind:style="pub_title_style">{{ pub_title }}</span>
         </h6>
-        {{patent_role}}
+        {{pub_subtitle}}
       </b-col>
 
       <b-col cols="2">
           <fa icon="calendar"/>
-          {{patent_date}}
+          {{pub_date}}
       </b-col>
       <hr/>
     </b-row>
@@ -22,12 +22,12 @@
 
 <script>
 export default {
-  name: "patent-item",
+  name: "pub-item",
   props:{
-    patent_title:String,
-    patent_title_style:String,
-    patent_role:String,
-    patent_date:String
+    pub_title:String,
+    pub_title_style:String,
+    pub_subtitle:String,
+    pub_date:String
   }
 }
 </script>

@@ -4,14 +4,14 @@
       <b-col cols="10" >
         <h6 style="font-weight: bold; display: inline">
           <fa icon="angle-right"/>
-          {{ proj_title }}
+          {{ honor_title }}
         </h6>
-        | {{proj_role}}
+        | {{honor_role}}
       </b-col>
 
       <b-col cols="2">
           <fa icon="calendar"/>
-          {{proj_date}}
+          {{honor_date}}
       </b-col>
       <hr/>
     </b-row>
@@ -22,11 +22,11 @@
 
 <script>
 export default {
-  name: "project-item",
+  name: "honor-item",
   props:{
-    proj_title:String,
-    proj_role:String,
-    proj_date:String
+    honor_title:String,
+    honor_role:String,
+    honor_date:String
   }
 }
 </script>

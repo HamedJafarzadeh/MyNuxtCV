@@ -1,0 +1,95 @@
+body {
+  color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.avatar {
+  display: block;
+  width: 10em;
+  margin: 0 auto 2.25em auto;
+}
+
+.avatar img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+hr {
+  margin: 0.2em;
+}
+
+.nolistPadding {
+  padding: 0;
+}
+
+.glancebadges {
+  font-size: 13px;
+  font-weight: normal;
+  padding: 0.4em;
+  margin: 0.1em;
+}
+
+.abitpadding {
+  padding: 3px !important;
+}
+
+.greentext {
+  color: #4da74f;
+  font-weight: bold;
+}
+
+.projectPic {
+  height: 200px;
+}
+
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.justPrint {
+  display: none;
+}
+
+@media print {
+
+  body {
+    font-size: 12px;
+  }
+
+  h1, h1 > * {
+    font-size: 21px;
+  }
+
+  h2, h2 > * {
+    font-size: 19px;
+  }
+
+  h3, h3 > * {
+    font-size: 17px;
+  }
+
+  h4, h4 > * {
+    font-size: 15px;
+  }
+
+  h5, h5 > * {
+    font-size: 14px;
+  }
+
+  h6, h6 > * {
+    font-size: 13px;
+  }
+
+  .noPrint {
+    display: none;
+  }
+
+  .justPrint {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

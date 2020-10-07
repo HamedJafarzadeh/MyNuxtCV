@@ -1,27 +1,26 @@
 <template>
   <div>
     <b-row >
-      <b-col >
+      <b-col cols="10" >
         <h5 style="font-weight: bold">
-          {{ exp_title }}
+          {{ ref_title }}
         </h5>
         <h6>
-          {{exp_role}}
+          {{ref_role}}
         </h6>
         <h6>
-          {{exp_role1}}
+          {{ref_role1}}
         </h6>
         <h6>
-          {{exp_role2}}
+          {{ref_role2}}
         </h6>
         <h6>
-          <fa icon="building"/>
-          {{ exp_place }}
+          <fa icon="envelope"/>
+          {{ ref_email }}
         </h6>
-        <h6>
-          <fa icon="calendar"/>
-          {{exp_date}}
-        </h6>
+      </b-col>
+      <b-col cols="2">
+        <slot name="refimg"/>
       </b-col>
     </b-row>
     <hr/>
@@ -31,14 +30,14 @@
 
 <script>
 export default {
-  name: "experiences-item",
+  name: "ref-item",
   props:{
-    exp_title:String,
-    exp_role:String,
-    exp_role1:String,
-    exp_role2:String,
-    exp_place:String,
-    exp_date:String
+    ref_title:String,
+    ref_role:String,
+    ref_role1:String,
+    ref_role2:String,
+    ref_email:String,
+    ref_img:String
   }
 }
 </script>
