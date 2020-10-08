@@ -1,0 +1,10 @@
+nuxt build && nuxt generate
+
+xcopy .\dist\ E:\Projects\HamedJafarzadehGitHubIO\cv /E /R /Y
+
+git -C 'E:\Projects\HamedJafarzadehGitHubIO\' add . 
+
+git -C 'E:\Projects\HamedJafarzadehGitHubIO\' commit -m "Fix images url again"
+
+git -C 'E:\Projects\HamedJafarzadehGitHubIO\' push 
+

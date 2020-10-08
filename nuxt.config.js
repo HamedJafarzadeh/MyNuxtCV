@@ -1,12 +1,19 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
+  static: {
+    prefix: true
+  },
+  router:{
+    base:'/cv/'
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'my-cv',
+    title: 'Hamed Jafarzadeh CV page',
     meta: [
       { charset: 'utf-8' },
+      { name: 'title', content: 'Hamed Jafarzadeh CV' },
+      { name: 'description', content: 'Hamed Jafarzadeh CV' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],

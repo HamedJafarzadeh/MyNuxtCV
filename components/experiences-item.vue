@@ -17,6 +17,7 @@
         <h6>
           <fa icon="building"/>
           {{ exp_place }}
+          <slot name="place_link"/>
         </h6>
         <h6>
           <fa icon="calendar"/>

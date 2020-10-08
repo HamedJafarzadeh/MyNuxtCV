@@ -1,8 +1,9 @@
 <template>
-  <b-container style="margin-top: 1em;">
+  <b-container fluid class="mainContainer">
 
-    <b-row class="no-gutters">
-      <b-col cols="3" style="background: whitesmoke ; border-radius: 10px" class="justify-content-center">
+    <b-row class="">
+      <b-col cols="12" sm="12" md="4" lg="4" style="background: whitesmoke ; border-radius: 10px"
+             class="justify-content-center">
         <profile/>
 
         <!-- Education -->
@@ -26,7 +27,7 @@
               </li>
               <li>
                 <fa icon="building"/>
-                University College Cork - Ireland
+                University College Cork - Ireland <ex-link-icon link="http://www.ucc.ie"/>
               </li>
               <li>
                 <fa icon="calendar"/>
@@ -42,7 +43,7 @@
               </li>
               <li>
                 <fa icon="building"/>
-                Skolkovo institute of science and Technology - Russia
+                Skoltech - Russia <ex-link-icon link="http://skoltech.ru"/>
               </li>
               <li>
                 <fa icon="calendar"/>
@@ -58,7 +59,7 @@
               </li>
               <li>
                 <fa icon="building"/>
-                Ferdowsi University of Mashhad - Iran
+                Ferdowsi University of Mashhad - Iran <ex-link-icon link="http://en.um.ac.ir/"/>
               </li>
               <li>
                 <fa icon="calendar"/>
@@ -85,11 +86,11 @@
               <li>
                 Persian (Farsi)-Native
               </li>
-              <li>
+              <li style="font-size: smaller">
                 English - IELTS Certificate - Overall <b>7.0/9.0 (C1)</b>
               </li>
-              <li style="font-size: small" class="text-center">
-                Speaking 8 - Listening 8 - Reading 6.5 - Writing 5.5
+              <li style="font-size: smaller" class="text-center">
+                [Speaking 8 - Listening 8 - Reading 6.5 - Writing 5.5]
               </li>
               <hr/>
             </ul>
@@ -119,10 +120,19 @@
           </b-col>
         </b-col>
 
+        <b-row style="padding: 20px">
+          <b-col style="font-style: italic">
+            <p align="justify">
+              I hereby consent to the processing of the personal data in this CV by anyone who receives this CV for the
+              sole
+              purpose of consideration of my skills and experience for professional opportunities.
+            </p>
+          </b-col>
+        </b-row>
       </b-col>
-      <b-col style="margin-left: 2em;margin-right: 3em" class="no-gutters">
+      <b-col cols="12" sm="12" md="8" lg="8" class="">
         <!-- About Me -->
-        <b-col class="no-gutters">
+        <b-col fluid class="no-gutters" style="width: 100%">
           <sectiontitle>
             <template v-slot:icon>
               <fa icon="id-card"></fa>
@@ -133,16 +143,16 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="">
-              I am computer and electronics engineer with more than 5 years of software and hardware programming
+              I am computer and electronics engineer with over 5 years of software and hardware programming
               experiences in industry and academic projects. My first commercial desktop application development goes
-              back to 2010,at age of 15, when I released the first version of my dental clinic management and it is
+              back to 2010,at age of 15, when I released the first version of my dental clinic management app which is
               still in use.
-              In the age of sixteen, I got familiar with Robotics, and I started to develop microcontroller based
-              devices to control the robots, which later in age of 17 led to a national prestigious award, Khawrizmi
-              Award, for developing a novel path planning algorithm on a robot and later I got also two international
-              awards in the same area. If you ask me what is your main asset in working environment, I would say, <span
-              class="greentext"> I love
-              what I do as a computer and electronics engineer and not because of earning money.</span>
+              At the age of sixteen, I got familiar with Robotics, and I started developing microcontroller based
+              devices to control the robots, which later, at age of 17, led to a national prestigious award, Khawrizmi
+              Award, for developing a novel path planning algorithm on a robot. Later on, I achieved two international
+              awards in the same field. If you ask me what is your main asset in working environment, I would say, <span
+              class="greentext"> I'm so passionate about my profession, and I truly love
+              what I do as a computer and electronics engineer. </span>
             </p>
           </b-col>
         </b-col>
@@ -232,26 +242,36 @@
               exp_title="Electrical and embedded systems engineer"
               exp_role="Full-funded master student"
               exp_place="Tyndall National Institute – University College Cork – Ireland"
-              exp_date="2019-Now"/>
-
-            <experiences-item
-              exp_title="Electronics and embedded devices team leader"
-              exp_role="National bursary bachelor student"
-              exp_place="FUM Robotics Lab – Ferdowsi University of Mashhad – Iran"
-              exp_date="2013-2018"/>
-
-            <experiences-item
-              exp_title="Co-Founder and vice president"
-              exp_role=""
-              exp_place="FUM Robotics community – Ferdowsi University of Mashhad – Iran"
-              exp_date="2014-2017"/>
-
+              exp_date="Sep 2019-Now (Expected finish date : Sep 2021)">
+              <template v-slot:place_link>
+                <ex-link-icon link="http://www.tyndall.ie"/>
+              </template>
+            </experiences-item>
 
             <experiences-item
               exp_title="Robotics and embedded engineer intern"
               exp_role=""
               exp_place="Sberbank Robotics lab – Moscow – Russia"
-              exp_date="May - August 2019"/>
+              exp_date="May - August 2019">
+
+            </experiences-item>
+
+            <experiences-item
+              exp_title="Electronics and embedded devices team leader"
+              exp_role="National bursary bachelor student"
+              exp_place="FUM Robotics Lab – Ferdowsi University of Mashhad – Iran"
+              exp_date="Sep 2013-Sep 2018">
+              <template v-slot:place_link>
+                <ex-link-icon link="http://fumrobotics.ir"/>
+              </template>
+            </experiences-item>
+
+            <experiences-item
+              exp_title="Co-Founder and vice president"
+              exp_role=""
+              exp_place="FUM Robotics community – Ferdowsi University of Mashhad – Iran"
+              exp_date="Jan 2014-March 2017"/>
+
 
             <experiences-item
               exp_title="Ferdowsi University Summer courses lecturer"
@@ -346,64 +366,37 @@
               proj_role="Computer and Electronics engineer"
               proj_date="2019-Now">
               <p align="justify">
-                I'm working full-time on IMPAQT project which is part of EU Horizon 2020 funding plan.
-                We are developing underwater wireless sensor network solution to monitor marine environment and animals
-                and carrying analysis on their behaviour. I'm working as an embedded engineer under supervision of Dr
-                Brendan O'Flynn and Marco Belcastro.
+
+                IMPAQT <ex-link-icon link="http://impaqtproject.eu"/> is a European project aimed at promoting and supporting inland, coastal zone and offshore IMTA
+                development. As a part of IMPAQT project, I'm developing a novel miniaturized low-power, low-cost
+                acoustic Underwater Transmitter Node (UWTN) and gateway buoy to provide an underwater sensors networks
+                platform to monitor and analyze marine environments. Each UWTN is integrating accelerometers and
+                temperature sensors and a unique ID tag, that can be immersed in water and IMTA sites to monitor water
+                flows, seaweeds movements and marine animals’ activities. It also has an auxiliary sensors interface
+                that can be used to record the external sensors data, developed by other partners in IMPAQT project,
+                such as Nitrite, Phosphate, and oxygen level sensors. The recorded data from internal and external
+                sensors then will be transmitted at regular intervals based on the TDMA scheme to the gateway buoy using
+                ultrasonic piezoelectric transducers. By utilizing sub-centimeter ultrasonic piezo transducers, unlike
+                RF solutions, it is possible to transmit data at relatively long distances regardless of salinity of the
+                water with a reasonable data rate. Each UWTN is also capable of performing pre-processing of the data
+                using an ARM microcontroller onboard. The gateway buoy logs the received data, performs edge-processing
+                and pushes the results to the cloud. The proposed platform enables the collection of sensors data in
+                real-time from an underwater environment which can lead to further knowledge about what is happening
+                beneath the water surface and result in the further development of IMTA sites.
               </p>
               <b-row>
-                <b-col>
-                  <img src="@/assets/images/IMPAQT biotelemetry.jpg" class="media img-thumbnail img-fluid"
+                <b-col sm="12" md="6">
+                  <img src="@/assets/images/IMPAQT biotelemetry.jpg" class="media img-thumbnail img-fluid projectPic"
                        style="height: 300px;"/>
                 </b-col>
-                <b-col>
-                  <img src="@/assets/images/EvalBoards-Annotated.jpg" class="media img-thumbnail img-fluid"
+                <b-col sm="12" md="6">
+                  <img src="@/assets/images/EvalBoards-Annotated.jpg" class="media img-thumbnail img-fluid projectPic"
                        style="height: 300px;"/>
-                </b-col>
-              </b-row>
-            </project-item>
-
-            <project-item
-              proj_title="FUM Bionic Hand V1, V2, V3"
-              proj_role="Electronics and programming team leader "
-              proj_date="2015-2018"
-            >
-
-              <p align="justify">
-                I was doing researches on improvement the usability of FUM Bionic hand series, I was mainly responsible
-                for miniaturized circuit design and firmware engineering on all three versions. My final BSc project was
-                also developing a miniaturized motor control unit to be fitted in hand palm, enabling torque and speed
-                mode control of 5 independent DC motors. It was a great chance for me to work as a team member in does
-                challenging and unique project. This project is still going on by FUM robotics lab team.
-              </p>
-              <b-row>
-                <b-col>
-                  <a href="/bionichand.jpg" target="_blank">
-                    <img src="/bionichand.jpg" class="media img-thumbnail img-fluid projectPic"
-                         style="max-height: 300px;"/>
-                  </a>
-                </b-col>
-                <b-col>
-                  <a href="/bionichand1.jpg" target="_blank">
-                    <img src="/bionichand1.jpg" class="media img-thumbnail img-fluid projectPic"
-                         style="max-height: 300px;"/>
-                  </a>
-                </b-col>
-                <b-col>
-                  <a href="/bionichand3.jpg" target="_blank">
-                    <img src="/bionichand3.jpg" class="media img-thumbnail img-fluid projectPic"
-                         style="max-height: 300px;"/>
-                  </a>
-                </b-col>
-                <b-col>
-                  <a href="/bionichand4.jpg" target="_blank">
-                    <img src="/bionichand4.jpg" class="media img-thumbnail img-fluid projectPic"
-                         style="max-height: 300px;"/>
-                  </a>
                 </b-col>
               </b-row>
 
             </project-item>
+
 
             <project-item
               proj_title="aiRTLS : Sub decimeter accuracy RTLS "
@@ -438,19 +431,67 @@
               </p>
               <b-row>
                 <b-col>
-                  <a href="/rtls1.jpg" target="_blank">
-                    <img src="/rtls1.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/rtls1.jpg" target="_blank">
+                    <img src="imgs/rtls1.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
                 <b-col>
-                  <a href="/rtls2.jpg" target="_blank">
-                    <img src="/rtls2.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/rtls2.jpg" target="_blank">
+                    <img src="imgs/rtls2.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
               </b-row>
             </project-item>
+
+            <project-item
+              proj_title="FUM Bionic Hand V1, V2, V3"
+              proj_role="Electronics and programming team leader "
+              proj_date="2015-2018"
+            >
+
+              <p align="justify">
+                I was doing researches on improvement the usability of FUM Bionic hand series, I was mainly responsible
+                for miniaturized circuit design and firmware engineering on all three versions. My final BSc project was
+                also developing a miniaturized motor control unit to be fitted in hand palm, enabling torque and speed
+                mode control of 5 independent DC motors. It was a great chance for me to work as a team member in does
+                challenging and unique project. This project is still going on by FUM robotics lab team.
+              </p>
+              <b-row>
+                <b-col sm="12" md="3" class="text-center justify-content-center">
+                  <a href="imgs/bionichand.jpg" target="_blank">
+                    <img src="imgs/bionichand.jpg" class="media img-thumbnail img-fluid projectPic"
+                         style="max-height: 300px;"/>
+                  </a>
+                </b-col>
+                <b-col sm="12" md="3" class="text-center justify-content-center">
+                  <a href="imgs/bionichand1.jpg" target="_blank">
+                    <img src="imgs/bionichand1.jpg" class="media img-thumbnail img-fluid projectPic"
+                         style="max-height: 300px;"/>
+                  </a>
+                </b-col>
+                <b-col sm="12" md="3" class="text-center justify-content-center">
+                  <a href="imgs/bionichand3.jpg" target="_blank">
+                    <img src="imgs/bionichand3.jpg" class="media img-thumbnail img-fluid projectPic"
+                         style="max-height: 300px;"/>
+                  </a>
+                </b-col>
+                <b-col sm="12" md="3" class="text-center justify-content-center">
+                  <a href="imgs/bionichand4.jpg" target="_blank">
+                    <img src="imgs/bionichand4.jpg" class="media img-thumbnail img-fluid projectPic"
+                         style="max-height: 300px;"/>
+                  </a>
+                </b-col>
+              </b-row>
+
+            </project-item>
+
+            <project-item
+              proj_title="Farhoosh Dataloggers"
+              proj_role="Electronic designer and firmware engineer"
+              proj_date="2017"
+            />
 
             <project-item
               proj_title="FUM autonomous lawn mower robot"
@@ -471,26 +512,26 @@
 
               <b-row>
                 <b-col>
-                  <a href="/lawnmower.jpg" target="_blank">
-                    <img src="/lawnmower.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/lawnmower.jpg" target="_blank">
+                    <img src="imgs/lawnmower.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
                 <b-col>
-                  <a href="/lawnmower1.jpg" target="_blank">
-                    <img src="/lawnmower1.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/lawnmower1.jpg" target="_blank">
+                    <img src="imgs/lawnmower1.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
                 <b-col>
-                  <a href="/lawnmower2.jpg" target="_blank">
-                    <img src="/lawnmower2.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/lawnmower2.jpg" target="_blank">
+                    <img src="imgs/lawnmower2.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
                 <b-col>
-                  <a href="/lawnmower3.jpg" target="_blank">
-                    <img src="/lawnmower3.jpg" class="center media img-thumbnail img-fluid projectPic"
+                  <a href="imgs/lawnmower3.jpg" target="_blank">
+                    <img src="imgs/lawnmower3.jpg" class="center media img-thumbnail img-fluid projectPic"
                          style="max-height: 300px;"/>
                   </a>
                 </b-col>
@@ -522,11 +563,6 @@
               proj_date="2015"
             />
 
-            <project-item
-              proj_title="Farhoosh Dataloggers"
-              proj_role="Electronic designer and firmware engineer"
-              proj_date="2017"
-            />
 
             <project-item
               proj_title="Clinic Dental lab management platform"
@@ -556,15 +592,15 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <patent-item
-              patent_title="System and method for muscle movements detection"
-              patent_role="filed Jul 4, 2018 | US-Patent. No: US20190000380A1 "
-              patent_date="2018"
-            />
-
-            <patent-item
               patent_title="Prosthetic hand with three level thumb and enhanced palm for power grasping"
               patent_role="IR-Patent. No: 139850140003005444"
               patent_date="2020"
+            />
+
+            <patent-item
+              patent_title="System and method for muscle movements detection"
+              patent_role="filed Jul 4, 2018 | US-Patent. No: US20190000380A1 "
+              patent_date="2018"
             />
 
             <patent-item
@@ -641,15 +677,15 @@
             />
 
             <honor-item
-              honor_title="1st place at 12th Khwarizmi national festival award"
-              honor_role="Team member |  Tehran - Iran"
-              honor_date="2010"
-            />
-
-            <honor-item
               honor_title="3rd place at IranOpen 2018 regional RoboCup Competition"
               honor_role="Team member |  Tehran - Iran"
               honor_date="2018"
+            />
+
+            <honor-item
+              honor_title="5th place and honorary diploma at 15th Iran Skills robotics competition "
+              honor_role="Team member |  Karaj - Iran"
+              honor_date="2014"
             />
 
             <honor-item
@@ -665,10 +701,11 @@
             />
 
             <honor-item
-              honor_title="1st place at province Avicenna Festival for juniors"
-              honor_role="Team member |  Tehran - Iran"
-              honor_date="2009"
+              honor_title="1st place at 2nd PnuOpen National Robotic Competition"
+              honor_role="Team member |  Mazandaran - Iran"
+              honor_date="2011"
             />
+
 
             <honor-item
               honor_title="1st place at 1st PnuOpen National Robotic Competition"
@@ -677,16 +714,17 @@
             />
 
             <honor-item
-              honor_title="1st place at 2nd PnuOpen National Robotic Competition"
-              honor_role="Team member |  Mazandaran - Iran"
-              honor_date="2011"
+              honor_title="1st place at 12th Khwarizmi national festival award"
+              honor_role="Team member |  Tehran - Iran"
+              honor_date="2010"
             />
 
             <honor-item
-              honor_title="5th place and honorary diploma at 15th Iran Skills robotics competition "
-              honor_role="Team member |  Karaj - Iran"
-              honor_date="2014"
+              honor_title="1st place at province Avicenna Festival for juniors"
+              honor_role="Team member |  Tehran - Iran"
+              honor_date="2009"
             />
+
           </b-col>
         </b-col>
       </b-col>
@@ -707,27 +745,22 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <pub-item
-              pub_title="Simplifying user interaction solutions for the FUM bionic Hand-I"
-              pub_subtitle="DOI: 10.1109/ICRoM.2016.7886785"
-              pub_date="2016"
-            />
-
-            <pub-item
               pub_title="Low Cost and Energy efficient Vehicle tracking, and traffic monitoring system based on MEMS and Wireless sensors network – Presented in Persian - Best Presentation award"
               pub_subtitle="http://sciot2017.um.ac.ir"
               pub_date="2017"
             />
 
             <pub-item
-              pub_title="Android application for mobile phones to communicate with pattern glove and FUM Bionic Hand – Presented in Persian"
-              pub_subtitle="http://www.civilica.c o m/Paper-CBCONF01-CBCONF01_0787.html"
+              pub_title="Simplifying user interaction solutions for the FUM bionic Hand-I"
+              pub_subtitle="DOI: 10.1109/ICRoM.2016.7886785"
               pub_date="2016"
             />
 
+
             <pub-item
-              pub_title="Using RFID in improving user experience in using FUM Bionic Hand – Presented in Persian"
-              pub_subtitle="http://itcc2015.ir"
-              pub_date="2015"
+              pub_title="Android application for mobile phones to communicate with pattern glove and FUM Bionic Hand – Presented in Persian"
+              pub_subtitle="http://www.civilica.c o m/Paper-CBCONF01-CBCONF01_0787.html"
+              pub_date="2016"
             />
 
             <pub-item
@@ -741,6 +774,13 @@
               pub_subtitle="https://icise.um.ac.ir"
               pub_date="2016"
             />
+
+            <pub-item
+              pub_title="Using RFID in improving user experience in using FUM Bionic Hand – Presented in Persian"
+              pub_subtitle="http://itcc2015.ir"
+              pub_date="2015"
+            />
+
 
           </b-col>
         </b-col>
@@ -814,11 +854,41 @@
     </b-row>
 
     <b-row class="noPrint">
-      <b-col class="text-center" style="color: #6996be; margin-top: 3em">
-        Built using <a href="https://nuxtjs.org/"> Nuxt.JS </a> and <a href="https://vuejs.org/">Vue.JS</a> by myself. if you liked it, feel free to fork it from my github repository.
+      <b-col class="text-center" style="color: #6996be; margin-top: 3em; margin-bottom: 3em">
+        Built using <a href="https://nuxtjs.org/"> Nuxt.JS </a> and <a href="https://vuejs.org/">Vue.JS</a> by myself.
+        if you liked it, feel free to fork it from <a href="https://github.com/HamedJafarzadeh/MyNuxtCV">my github
+        repository</a>.
       </b-col>
     </b-row>
+
+    <div class="noPrint">
+      <div v-if="printtoastflag" aria-live="polite" aria-atomic="true" tabindex="0" class="toast show  printToast" style="min-height: 100px">
+        <div class="toast-header">
+          <strong class="mr-auto">Hi :)</strong>
+          <button type="button" class="ml-2 mb-1 close" v-on:click="printtoastflag = false" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Welcome to my online CV document. This document is print-friendly. you can save it as a PDF or print if, it is necessary.
+          <p style="color: #4da74f;margin: 0">Save papers => Save trees => Save world. <fa style="color: #4da74f" icon="leaf"/> </p>
+        </div>
+    </div>
+
+
+<!--      <div class="toast-header">-->
+<!--        Hi :)-->
+<!--        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">-->
+<!--          <span aria-hidden="true">&times;</span>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="toast-body">-->
+<!--        -->
+<!--      </div>-->
+    </div>
+
   </b-container>
+
 </template>
 
 <script lang="ts">
@@ -831,30 +901,36 @@ import PatentItem from "~/components/patent-items.vue";
 import HonorItem from "~/components/honor-items.vue";
 import PubItem from "~/components/pub-items.vue";
 import RefItem from "~/components/ref-items.vue";
+import ExLinkIcon from "~/components/exLinkIcon.vue";
 
 function printNotify() {
 
 }
 
 export default Vue.extend({
-  components: {RefItem, PubItem, HonorItem, PatentItem, ProjectItem, ExperiencesItem, Sectiontitle, Profile},
+  components: {ExLinkIcon, RefItem, PubItem, HonorItem, PatentItem, ProjectItem, ExperiencesItem, Sectiontitle, Profile},
   methods: {
     printNotify(variant = null) {
-      this.$bvToast.toast('Welcome to my online CV document. This document is print-friendly. you can save it as a PDF or print if it is really necessary.', {
-        title: `Hi :)`,
-        variant: 'success',
-        solid: true,
-        autoHideDelay: 8000
-      })
+      // this.$bvToast.toast('Welcome to my online CV document. This document is print-friendly. you can save it as a PDF or print if it is really necessary.', {
+      //   title: `Hi :)`,
+      //   variant: 'success',
+      //   toastClass: 'noPrint',
+      //   solid: true,
+      //   autoHideDelay: 8000
+      // })
+    },
+    hideToast(){
+
     }
   },
   created() {
-    this.printNotify();
+    // this.printNotify();
   },
   data() {
     return {
+      printtoastflag : true,
       modalShow: false,
-      modalContent: '<p class="my-4">Hello from modal!</p>'
+      modalContent: '<p class="my-4">Hello from modal!</p>',
     }
   },
 })
