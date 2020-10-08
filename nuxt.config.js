@@ -15,6 +15,7 @@ export default {
       { name: 'title', content: 'Hamed Jafarzadeh CV' },
       { name: 'description', content: 'Hamed Jafarzadeh CV' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'google-site-verification', content: 'xxx' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -29,6 +30,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '~plugins/googleanalytics.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
