@@ -23,7 +23,7 @@
            <fa icon="birthday-cake" />
          </b-col>
          <b-col>
-           Feb.1995 - 24 Years old
+           Feb.1995 - 25 Years old
          </b-col>
        </b-row>
      </li>

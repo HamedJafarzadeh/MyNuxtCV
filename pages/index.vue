@@ -145,7 +145,7 @@
             <p align="justify" style="">
               I am computer and electronics engineer with over 5 years of software and hardware programming
               experiences in industry and academic projects. My first commercial desktop application development goes
-              back to 2010,at age of 15, when I released the first version of my dental clinic management app which is
+              back to 2010, at age of 15, when I released the first version of my dental clinic management app which is
               still in use.
               At the age of sixteen, I got familiar with Robotics, and I started developing microcontroller based
               devices to control the robots, which later, at age of 17, led to a national prestigious award, Khawrizmi
@@ -333,7 +333,7 @@
 
 
     <b-row class="justPrint">
-      <b-col style="margin: 0.5em" class="text-center">
+      <b-col style="margin: 0.5em; margin-top: 4em" class="text-center">
         <h4>
           For further details and references please visit interactive version of this document on
           <a href="http://cv.hamedj.ir">
@@ -356,7 +356,7 @@
               <fa icon="shapes"></fa>
             </template>
             <template v-slot:title>
-              Projects
+              <b-row><b-col sm="1" md="8" lg="8" >Projects</b-col>  <b-col lg="4" md="4" sm="11" style="font-size: min(13px,4vw)" class="justify-content-center text-center my-auto noPrint">[Click or tap for details]</b-col></b-row>
             </template>
           </sectiontitle>
           <b-col class="no-gutters" style="padding-top: 0.3em">
@@ -382,7 +382,7 @@
                 using an ARM microcontroller onboard. The gateway buoy logs the received data, performs edge-processing
                 and pushes the results to the cloud. The proposed platform enables the collection of sensors data in
                 real-time from an underwater environment which can lead to further knowledge about what is happening
-                beneath the water surface and result in the further development of IMTA sites.
+                beneath the water surface and result in the further development of IMTA sites. <a href="http://hamedj.ir/IMPAQT">Read more</a>
               </p>
               <b-row>
                 <b-col sm="12" md="6">
@@ -745,8 +745,36 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <pub-item
-              pub_title="Low Cost and Energy efficient Vehicle tracking, and traffic monitoring system based on MEMS and Wireless sensors network – Presented in Persian - Best Presentation award"
-              pub_subtitle="http://sciot2017.um.ac.ir"
+              pub_title="Development of a Low-Power Underwater NFC-Enabled Sensor Device for Seaweed Monitoring"
+              pub_authors="C Peres, M Emam, H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_subtitle="MDPI Sensors 2021"
+              pub_date="2021"
+            />
+
+            <pub-item
+              pub_title="IMPAQT Miniaturized Underwater Acoustic Telemetry Platform: Transmitter Node System Design"
+              pub_authors=" H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_subtitle="ThinkMind (TM) - SensorComm 2020 - 🥇 Best Paper Award"
+              pub_date="2020"
+            />
+
+            <pub-item
+              pub_title="IMPAQT miniaturized underwater acoustic sensors network platform"
+              pub_authors=" H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_subtitle="AGU Fall meeting 2020"
+              pub_date="2020"
+            />
+
+            <pub-item
+              pub_title="Theoretical models for underwater RFID and the impact of water salinity on the design of wireless systems"
+              pub_authors="C Peres, M Pigeon, N Rather, D Gawade, J Buckley, H Jafarzadeh, B O'Flynn"
+              pub_subtitle="International Journal on Advances in Networks and Services - IARIA 2020"
+              pub_date="2020"
+            />
+
+            <pub-item
+              pub_title="Low Cost and Energy efficient Vehicle tracking, and traffic monitoring system based on MEMS and Wireless sensors network – Presented in Persian "
+              pub_subtitle="http://sciot2017.um.ac.ir - 🥇 Best Paper Award"
               pub_date="2017"
             />
 
@@ -759,7 +787,7 @@
 
             <pub-item
               pub_title="Android application for mobile phones to communicate with pattern glove and FUM Bionic Hand – Presented in Persian"
-              pub_subtitle="http://www.civilica.c o m/Paper-CBCONF01-CBCONF01_0787.html"
+              pub_subtitle="http://www.civilica.com/Paper-CBCONF01-CBCONF01_0787.html"
               pub_date="2016"
             />
 
@@ -924,7 +952,16 @@ export default Vue.extend({
     }
   },
   created() {
-    // this.printNotify();
+    // // this.printNotify();
+    // console.log("Requesting to bot");
+    // this.$axios.$post('http://server.hamedj.ir:2688/BotGateway/Log',
+    //   `logLevel=CVVisit&logText=CV Page`,
+    //   {
+    //     headers: {
+    //       'Content-Type': 'application/x-www-form-urlencoded'
+    //     }
+    //   }
+    // )
   },
   data() {
     return {

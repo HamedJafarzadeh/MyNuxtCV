@@ -16,6 +16,10 @@ export default {
       { name: 'description', content: 'Hamed Jafarzadeh CV' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'google-site-verification', content: 'xxx' },
+      { name: 'og:url', content: 'http://hamedjafarzadeh.github.io/cv' },
+      { name: 'og:title', content: 'Hamed Jafarzadeh CV' },
+      { name: 'og:description', content: 'I am computer and electronics engineer with over 5 years of software and hardware programming experiences in industry and academic projects' },
+      { name: 'og:image', content: 'imgs/profile.jpg' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -30,7 +34,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~plugins/googleanalytics.js', mode: 'client' }
+    { src: '~plugins/googleanalytics.js', mode: 'client' },
+    { src: '~plugins/hjanalytics.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -51,6 +56,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
   fontawesome: {
     imports: [

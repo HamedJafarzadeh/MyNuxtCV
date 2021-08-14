@@ -6,7 +6,14 @@
           <fa icon="angle-right" />
           <span v-bind:style="pub_title_style">{{ pub_title }}</span>
         </h6>
-        {{pub_subtitle}}
+        <div style="font-weight: 500; padding-left: 20px" >
+          {{pub_authors}}
+        </div>
+        <div style="font-weight: 300; padding-left: 20px">
+          {{pub_subtitle}}
+        </div>
+
+
       </b-col>
 
       <b-col cols="2">
@@ -26,6 +33,7 @@ export default {
   props:{
     pub_title:String,
     pub_title_style:String,
+    pub_authors:String,
     pub_subtitle:String,
     pub_date:String
   }

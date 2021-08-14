@@ -88,3 +88,5 @@ sw.*
 
 # Vim swap files
 *.swp
+Deploy.ps1
+plugins/hjanalytics.js

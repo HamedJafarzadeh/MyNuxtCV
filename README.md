@@ -17,9 +17,9 @@ then :
  The left column of the resume can be edited in the `/components/profile.vue` file.
 
  I tried to keep it easy to edit the resume, so the rest of document can be edited in `page/index.vue` file only.
- 
+
  ### Google analytics
- 
+
  In `plugins/googleanalyctics.js` replace `UA-xxxx-2` with your google analytic identification code.
 
 ## Build Setup
@@ -40,3 +40,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+
+## Todo :
+
+- Change all props to slots, in order to have more flexibility 
