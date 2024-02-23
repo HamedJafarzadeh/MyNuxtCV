@@ -31,10 +31,11 @@
               </li>
               <li>
                 <fa icon="calendar"/>
-                2019-2021 (expected)
+                2019-2021
               </li>
               <hr/>
-              <!-- Russia MSC -->
+              <!-- Iran MSC -->
+              
               <li>
                 <b>MSc Information science and Technology</b>
               </li>
@@ -43,14 +44,14 @@
               </li>
               <li>
                 <fa icon="building"/>
-                Skoltech - Russia <ex-link-icon link="http://skoltech.ru"/>
+                Skoltech - Russia <ex-link-icon link="http://www.skoltech.ru"/>
               </li>
               <li>
                 <fa icon="calendar"/>
-                2018-2019
+                2018-2019 [Withdraw]
               </li>
               <hr/>
-              <!-- Iran MSC -->
+
               <li>
                 <b>Computer Engineering</b>
               </li>
@@ -109,13 +110,7 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="font-size: smaller">
-              I’m currently residing in Ireland using student visa (Stamp 2), at the moment I'm able to work only part
-              time, but after
-              graduation (Sept 2021), I will be automatically able to work in Ireland for two years (Stamp 1G) based on
-              <a href="http://www.inis.gov.ie/en/INIS/Pages/Student%20Pathway"> Third Level
-                Graduate Programme work permit</a>. Considering my major and profession, I would be eligible for
-              Critical
-              skills work permit at any stage.
+              I’m currently residing in Ireland on stamp 1 tied to Stryker Ireland.
             </p>
           </b-col>
         </b-col>
@@ -143,7 +138,7 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="">
-              I am computer and electronics engineer with over 5 years of software and hardware programming
+              I am computer and electronics engineer with over 8 years of software and hardware programming
               experiences in industry and academic projects. My first commercial desktop application development goes
               back to 2010, at age of 15, when I released the first version of my dental clinic management app which is
               still in use.
@@ -239,10 +234,19 @@
           </sectiontitle>
           <b-col class="no-gutters" style="padding-top: 10px">
             <experiences-item
+              exp_title="Senior Embedded Software engineer"
+              exp_role="Full-time R&D Engineer for Ear,nose and throat surgical tools"
+              exp_place="Stryker"
+              exp_date="Dec 2021-Now">
+              <template v-slot:place_link>
+                <ex-link-icon link="https://www.stryker.com/ie/en/index.html"/>
+              </template>
+            </experiences-item>
+            <experiences-item
               exp_title="Electrical and embedded systems engineer"
-              exp_role="Full-funded master student"
+              exp_role="Fully-funded master student"
               exp_place="Tyndall National Institute – University College Cork – Ireland"
-              exp_date="Sep 2019-Now (Expected finish date : Sep 2021)">
+              exp_date="Sep 2019-Dec 2021">
               <template v-slot:place_link>
                 <ex-link-icon link="http://www.tyndall.ie"/>
               </template>
@@ -332,16 +336,16 @@
     </b-row>
 
 
-    <b-row class="justPrint">
-      <b-col style="margin: 0.5em; margin-top: 4em" class="text-center">
-        <h4>
-          For further details and references please visit interactive version of this document on
-          <a href="http://cv.hamedj.ir">
-            <b-badge variant="dark" style="padding: 0.3em"> cv.hamedj.ir</b-badge>
-          </a>
-        </h4>
-      </b-col>
-    </b-row>
+<!--    <b-row class="justPrint">-->
+<!--      <b-col style="margin: 0.5em; margin-top: 4em" class="text-center">-->
+<!--        <h4>-->
+<!--          For further details and references please visit interactive version of this document on-->
+<!--          <a href="http://cv.hamedj.ir">-->
+<!--            <b-badge variant="dark" style="padding: 0.3em"> cv.hamedj.ir</b-badge>-->
+<!--          </a>-->
+<!--        </h4>-->
+<!--      </b-col>-->
+<!--    </b-row>-->
     <hr style="page-break-after: always"/>
 
 
@@ -362,9 +366,17 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <project-item
+              proj_title="Surgical Instruments and consoles developer"
+              proj_role="Computer and Electronics engineer"
+              proj_date="2021-now">
+    
+
+            </project-item>
+
+            <project-item
               proj_title="IMPAQT : miniaturized underwater sensors network platform"
               proj_role="Computer and Electronics engineer"
-              proj_date="2019-Now">
+              proj_date="2019-2021">
               <p align="justify">
 
                 IMPAQT <ex-link-icon link="http://impaqtproject.eu"/> is a European project aimed at promoting and supporting inland, coastal zone and offshore IMTA
@@ -745,6 +757,13 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <pub-item
+              pub_title="Next Generation IMPAQT Miniaturized Underwater Transmitter System Design"
+              pub_authors=" H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_subtitle="International Journal on Advances in Networks and Services 2021 - Vol 14"
+              pub_date="2021"
+            />
+
+            <pub-item
               pub_title="Development of a Low-Power Underwater NFC-Enabled Sensor Device for Seaweed Monitoring"
               pub_authors="C Peres, M Emam, H Jafarzadeh, M Belcastro, B O’Flynn"
               pub_subtitle="MDPI Sensors 2021"
@@ -752,15 +771,29 @@
             />
 
             <pub-item
+              pub_title="Wave height estimation using a novel seaweed-attached sensor"
+              pub_authors="M Emam, C Peres, H Jafarzadeh, M Belcastro, B O’Flynn, J Casserly, F Kane"
+              pub_subtitle="SensorComm 2021"
+              pub_date="2021"
+            />
+
+            <pub-item
+              pub_title="Conceptual Method of Temperature Sensation in Bionic Hand by Extraordinary Perceptual Phenomenon"
+              pub_authors="S Bahrami Moqadam, A.S Asheghabadi, F. Norouzi, H. Jafarzadeh, A. Khosroabadi, A. Alagheband, G. Bangash, N. Morovatdar, J. Xu"
+              pub_subtitle="Journal of Bionic Engineering - Springer"
+              pub_date="2021"
+            />
+
+            <pub-item
               pub_title="IMPAQT Miniaturized Underwater Acoustic Telemetry Platform: Transmitter Node System Design"
-              pub_authors=" H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_authors="H Jafarzadeh, M Belcastro, B O’Flynn"
               pub_subtitle="ThinkMind (TM) - SensorComm 2020 - 🥇 Best Paper Award"
               pub_date="2020"
             />
 
             <pub-item
               pub_title="IMPAQT miniaturized underwater acoustic sensors network platform"
-              pub_authors=" H Jafarzadeh, M Belcastro, B O’Flynn"
+              pub_authors="H Jafarzadeh, M Belcastro, B O’Flynn"
               pub_subtitle="AGU Fall meeting 2020"
               pub_date="2020"
             />
@@ -780,6 +813,7 @@
 
             <pub-item
               pub_title="Simplifying user interaction solutions for the FUM bionic Hand-I"
+              pub_authors="S. B. Moqadam, H Jafarzadeh, S Naddaf, S Darvishi, S.A Esfehani, P Pisbhin, F Babazadeh, A Makhdoumi, A Akbarzadeh, A Hajipour"
               pub_subtitle="DOI: 10.1109/ICRoM.2016.7886785"
               pub_date="2016"
             />
@@ -952,7 +986,7 @@ export default Vue.extend({
     }
   },
   created() {
-    // // this.printNotify();
+    // this.printNotify();
     // console.log("Requesting to bot");
     // this.$axios.$post('http://server.hamedj.ir:2688/BotGateway/Log',
     //   `logLevel=CVVisit&logText=CV Page`,
