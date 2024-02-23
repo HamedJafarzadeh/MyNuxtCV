@@ -44,7 +44,7 @@
            <fa icon="envelope" />
          </b-col>
          <b-col style="font-size: smaller">
-           Hamed.Jafarzadeh [at] tyndall.ie
+           hjafarzadeh511 [at] gmail.com
          </b-col>
        </b-row>
      </li>

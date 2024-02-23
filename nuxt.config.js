@@ -35,7 +35,7 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: '~plugins/googleanalytics.js', mode: 'client' },
-    { src: '~plugins/hjanalytics.js', mode: 'client' }
+    // { src: '~plugins/hjanalytics.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -45,7 +45,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-
+    '@nuxtjs/google-fonts',
     ['nuxt-fontawesome', {
       component: 'fa',
     }
@@ -56,7 +56,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Roboto: true,
+        Inter: [400, 700],
+        'Josefin+Sans': true,
+        Lato: [100, 300],
+        Raleway: {
+          wght: [100, 400],
+          ital: [100]
+        },
+        Inter: '200..700',
+        'Crimson Pro': {
+          wght: '200..900',
+          ital: '200..700',
+        }
+      }
+  }],
   ],
   fontawesome: {
     imports: [

@@ -1,6 +1,7 @@
 body {
   color-adjust: exact;
   -webkit-print-color-adjust: exact;
+  font-family: 'Roboto', sans-serif;
 }
 
 .mainContainer{

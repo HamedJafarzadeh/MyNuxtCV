@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript": "^2.8.1",
-    "@nuxt/typescript-build": "^2.0.3"
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/google-fonts": "^3.1.3"
   }
 }

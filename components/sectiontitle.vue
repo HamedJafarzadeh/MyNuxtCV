@@ -2,16 +2,16 @@
   <div>
     <b-row class="justify-content-center abitpadding" style="background-color: #a9baca; border-radius: 10px">
 <!--      <b-col style="-ms-flex: 0 0 10px;flex: 0 0 10px;">-->
-        <div style="margin-left: 5px">
-        <h3>
+        <div style="margin-left: 5px;  margin-bottom: 0;">
+        <h4 style="margin-bottom: 0;">
           <slot name="icon"/>
-        </h3>
+        </h4>
         </div>
 <!--      </b-col>-->
-      <b-col style="">
-        <h3>
+      <b-col style="margin-bottom: 0;">
+        <h4 style="margin-bottom: 0;">
           <slot name="title"></slot>
-        </h3>
+        </h4>
       </b-col>
     </b-row>
   </div>

@@ -93,11 +93,11 @@
               <li style="font-size: smaller" class="text-center">
                 [Speaking 8 - Listening 8 - Reading 6.5 - Writing 5.5]
               </li>
-              <hr/>
+
             </ul>
           </b-col>
         </b-col>
-
+        <hr/>
         <!-- Residency -->
         <b-col class="no-gutters">
           <sectiontitle>
@@ -110,11 +110,56 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="font-size: smaller">
-              I’m currently residing in Ireland on stamp 1 tied to Stryker Ireland.
+              I’m currently residing in Ireland on Stamp 1 critical skills and switching to Stamp 4 in April 2024.
             </p>
           </b-col>
         </b-col>
+        <hr/>
+        <!-- Languages -->
+        <b-col class="no-gutters">
+          <sectiontitle>
+            <template v-slot:icon>
+              <fa icon="stamp"></fa>
+            </template>
+            <template v-slot:title>
+              Certificates
+            </template>
+          </sectiontitle>
+          <b-col class="no-gutters">
+            <ul style="list-style: none; " class="no-gutters nolistPadding">
+              <div>
+                <fa icon="dna"></fa>
+                Clifton Strengths : 
+                <br/>
+                <b>Futuristic, Ideation, Significance, Focus, Analytical</b>
+              </div>
+              <hr/>
+              <div>
+                <fa icon="certificate"></fa>
+                Linux Foundation 
+                <br/>
+                <b>LFD450: Embeddedd Linux Development</b>
+              </div>
+              <hr/>
+              <div>
+                <fa icon="certificate"></fa>
+                Part Academy
+                <br/>
+                <b>Android Application Development</b>
+              </div>
+              <hr/>
+              <div>
+                <fa icon="certificate"></fa>
+                Iran Technical & Vocational Training Organization
+                <br/>
+                <b>Mechanic Designer with Solid Works</b>
+              </div>
+              <hr/>
+            </ul>
+          </b-col>
+        </b-col>
 
+        
         <b-row style="padding: 20px">
           <b-col style="font-style: italic">
             <p align="justify">
@@ -124,6 +169,7 @@
             </p>
           </b-col>
         </b-row>
+        
       </b-col>
       <b-col cols="12" sm="12" md="8" lg="8" class="">
         <!-- About Me -->
@@ -310,13 +356,13 @@
             <ul style="list-style: none; padding-top: 10px" class="no-gutters nolistPadding">
               <li>
                 <b-badge variant="warning" style="font-size: 13px"> Computer programming</b-badge>
-                Java, C#, Python and NodeJS – Desktop applications, Machine learning, deep learning experiences
+                Flutter, Java, C#, Python and NodeJS – Desktop applications, Machine learning, deep learning experiences
               </li>
 
               <li>
                 <b-badge variant="warning" style="font-size: 13px"> Embedded programming</b-badge>
                 C, C++ on STM32, NRF and AVR families – FreeRTOS, network stacks, advanced debugging and analyzing
-                firmware
+                firmware, CAN, CANOpen, ModBus and relevant protocols
               </li>
 
               <li>
@@ -366,11 +412,17 @@
           <b-col class="no-gutters" style="padding-top: 0.3em">
 
             <project-item
-              proj_title="Surgical Instruments and consoles developer"
+              proj_title="CANOpenNode-STM32 open source library maintainer and contributor"
+              proj_role="Computer and Electronics engineer"
+              proj_date="2022-now">
+  
+            </project-item>
+
+            <project-item
+              proj_title="Surgical Instruments and consoles firmware developer"
               proj_role="Computer and Electronics engineer"
               proj_date="2021-now">
-    
-
+  
             </project-item>
 
             <project-item
