@@ -91,7 +91,7 @@
                 English - IELTS Certificate - Overall <b>7.0/9.0 (C1)</b>
               </li>
               <li style="font-size: smaller" class="text-center">
-                [Speaking 8 - Listening 8 - Reading 6.5 - Writing 5.5]
+                [ Speaking 8 - Listening 8 - Reading 6.5 - Writing 5.5 ]
               </li>
 
             </ul>
@@ -110,7 +110,7 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="font-size: smaller">
-              I’m currently residing in Ireland on Stamp 1 critical skills and switching to Stamp 4 in April 2024.
+              I'm currently living in Ireland on Stamp 4 , which means I'm free to take any roles and I <b> don't </b>  need sponsership and work permit to work in Ireland.
             </p>
           </b-col>
         </b-col>
@@ -127,6 +127,7 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <ul style="list-style: none; " class="no-gutters nolistPadding">
+              <div></div>
               <div>
                 <fa icon="dna"></fa>
                 Clifton Strengths : 
@@ -280,8 +281,8 @@
           </sectiontitle>
           <b-col class="no-gutters" style="padding-top: 10px">
             <experiences-item
-              exp_title="Senior Embedded Software engineer"
-              exp_role="Full-time R&D Engineer for Ear,nose and throat surgical tools"
+              exp_title="Staff Embedded Software engineer"
+              exp_role="Full-time Team lead and R&D Engineer for ear, nose and throat surgical tools"
               exp_place="Stryker"
               exp_date="Dec 2021-Now">
               <template v-slot:place_link>
