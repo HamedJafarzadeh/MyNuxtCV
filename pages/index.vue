@@ -331,14 +331,6 @@
               exp_place="FUM Robotics community – Ferdowsi University of Mashhad – Iran"
               exp_date="2014-2018"/>
 
-            <experiences-item
-              exp_title="Teaching assistant"
-              exp_role="VHDL and FPGA Design – Dr. Maryam Zomorodi"
-              exp_role1="Robotics and Dynamics – Dr.Alireza Akbarzadeh Totoonchi"
-              exp_role2="Introduction to computer programming using C – Dr. Saeed Abrishami"
-              exp_place="Ferdowsi University of Mashhad – Iran"
-              exp_date="2013-2018"/>
-
 
           </b-col>
         </b-col>
