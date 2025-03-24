@@ -655,18 +655,23 @@
             </template>
           </sectiontitle>
           <b-col class="no-gutters" style="padding-top: 0.3em">
-
+            <patent-item
+              patent_title="US-Patent: Cutting accessory for a surgical cutting instrument"
+              patent_role="Filed June 4, 2024 | US-Patent. No: WO2024257043A1 "
+              patent_date="2024"
+            />
+            <patent-item
+              patent_title="US-Patent: System and method for muscle movements detection"
+              patent_role="Filed Jul 4, 2018 | US-Patent. No: US20190000380A1 "
+              patent_date="2018"
+            />
             <patent-item
               patent_title="Prosthetic hand with three level thumb and enhanced palm for power grasping"
               patent_role="IR-Patent. No: 139850140003005444"
               patent_date="2020"
             />
 
-            <patent-item
-              patent_title="System and method for muscle movements detection"
-              patent_role="filed Jul 4, 2018 | US-Patent. No: US20190000380A1 "
-              patent_date="2018"
-            />
+
 
             <patent-item
               patent_title="Voluntary control system on force and pressure for amputee people who have prosthetic hand"
