@@ -185,7 +185,7 @@
           </sectiontitle>
           <b-col class="no-gutters">
             <p align="justify" style="">
-              I am computer and electronics engineer with over 8 years of software and hardware programming
+              I am computer and electronics engineer with over 10 years of software and hardware programming
               experiences in industry and academic projects. My first commercial desktop application development goes
               back to 2010, at age of 15, when I released the first version of my dental clinic management app which is
               still in use.
@@ -193,8 +193,8 @@
               devices to control the robots, which later, at age of 17, led to a national prestigious award, Khawrizmi
               Award, for developing a novel path planning algorithm on a robot. Later on, I achieved two international
               awards in the same field. If you ask me what is your main asset in working environment, I would say, <span
-              class="greentext"> I'm so passionate about my profession, and I truly love
-              what I do as a computer and electronics engineer. </span>
+              class="greentext"> I'm so passionate about creation, and I truly love
+              what I do as a computer and electronics engineer as It allows me to bring new things to life.</span> Outside of work, I do a lot of DIY works like woodworking, tiling and also most of my car repairs.
             </p>
           </b-col>
         </b-col>
@@ -349,12 +349,12 @@
             <ul style="list-style: none; padding-top: 10px" class="no-gutters nolistPadding">
               <li>
                 <b-badge variant="warning" style="font-size: 13px"> Computer programming</b-badge>
-                Flutter, Java, C#, Python and NodeJS – Desktop applications, Machine learning, deep learning experiences
+                Flutter, Java, C#, Python and NodeJS – Desktop applications, Machine learning, deep learning experiences, Reverse Engineering including Hardware and Software Pentests
               </li>
 
               <li>
                 <b-badge variant="warning" style="font-size: 13px"> Embedded programming</b-badge>
-                C, C++ on STM32, NRF and AVR families – FreeRTOS, network stacks, advanced debugging and analyzing
+                C, C++ on STM32, NRF and AVR families – Zephyr, FreeRTOS, network stacks, advanced debugging and analyzing
                 firmware, CAN, CANOpen, ModBus and relevant protocols
               </li>
 
